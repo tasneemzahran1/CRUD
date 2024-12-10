@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmark</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;1,700&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./fontawesome-free-6.6.0-web/fontawesome-free-6.6.0-web/css/all.min.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <section class="vh-100">
+        <h1 class="text-dark text-center font fw-bolder fs-1 space">Bookmarker</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 dot">
+                    <ul class="list-unstyled text-center fs-4 fw-bold mt-4">
+                        <li class="d-inline-block"><i class="fa-solid fa-bookmark"></i></li>
+                        <li class="d-inline-block">Bookmark your favorite sites</li>
+                        <li class="d-inline-block"><i class="fa-solid fa-bookmark"></i></li>
+                    </ul>
+                </div>
+                <div class="col-md-12">
+                    <label for="name" class="pb-3 pt-2 fs-6 fw-bold"><i class="fa-solid fa-book pe-2"></i> Site
+                        Name</label>
+                    <input type="text" id="name" placeholder="Bookmark your favorite sites"
+                        class="form-control fw-semibold mb-2 focus" minlength="3">
+                </div>
+                
+                <div class="col-md-12">
+                    <label for="url" class="py-3 fs-6 fw-bold"><i class="fa-solid fa-link pe-2"></i> Site URL</label>
+                    <input type="url" id="url" placeholder="Website URL" class="form-control fw-semibold focus">
+                </div>
+                <button onclick="catchValue()" class="btn btn-sm color my-4 mx-auto p-1 text-white fw-semibold fs-6">Submit</button>
+                <div class=" col-md-12 dot">
+                    <table class="table text-center mt-4">
+                        <thead>
+                            <tr>
+                                <th>Index</th>
+                                <th>Website Name</th>
+                                <th>Visit</th>
+                                <th>Delete</th>
+                            </tr>
+                        </thead>
+                        <tbody id="demo">
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src=" ./js/bootstrap.bundle.min.js">
+    </script>
+    <script src="./main.js"></script>
+</body>
+
+</html>

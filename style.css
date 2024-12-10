@@ -1,0 +1,106 @@
+body {
+    background-color: #F7ECDE;
+}
+
+h1 {
+    position: relative;
+    z-index: 4;
+
+}
+
+.space {
+    margin-top: 60px;
+    margin-bottom: 60px;
+
+}
+
+.font {
+    font-family: "Pacifico", cursive;
+    font-size: 30px;
+    font-style: italic;
+    font-style: normal;
+
+}
+
+h1::after {
+    content: "";
+    width: 240px;
+    height: 15px;
+    background-color: #FEC260;
+    position: absolute;
+    right: 42.1%;
+    bottom: 0%;
+    z-index: -1;
+
+}
+
+h1::before {
+    content: "";
+    width: 240px;
+    height: 15px;
+    background-color: #FEC260;
+    position: absolute;
+    right: 42.1%;
+    bottom: 0%;
+    z-index: -1;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+
+h1:hover::before {
+    height: 25px;
+}
+
+ul {
+    background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(90deg, rgba(30, 142, 65, 1) 35%, rgba(227, 225, 26, 1) 100%);
+}
+
+li {
+    font-family: "Righteous", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.dot {
+    border-color: black;
+    border-style: dotted;
+    border-bottom: 0;
+    border-right: 0;
+    border-left: 0;
+    border-width: 2px;
+}
+
+.color {
+    background-color: #ce4823;
+    width: 180px;
+    transition: all 0.5;
+    -webkit-transition: all 0.5;
+    -moz-transition: all 0.5;
+    -ms-transition: all 0.5;
+    -o-transition: all 0.5;
+}
+
+.color:hover {
+    background-color: rgb(187, 65, 32);
+}
+
+.focus:focus {
+    border-color: #FEC260;
+    box-shadow: 0px 0px 4px #FEC260;
+}
+#demo button{
+    background-color: #8fa230;
+    transition: all 0.3;
+    -webkit-transition: all 0.3;
+    -moz-transition: all 0.3;
+    -ms-transition: all 0.3;
+    -o-transition: all 0.3;
+}
+#demo button:hover{
+    background-color:rgb(109, 125, 30);
+}
